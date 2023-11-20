@@ -9,7 +9,7 @@ public class Program
     {
         Console.WriteLine("============= start ==============");
 
-        var elapsed = PerformanceMeter.Check(() => PerformanceTimerExample(10));
+        var elapsed = PerformanceMeter.Check(() => PerformanceTimerExample(100));
         Console.WriteLine($"ActionType Time elapsed: {elapsed}");
 
         // 반환 값이 있는 메소드 측정 방법
@@ -17,7 +17,6 @@ public class Program
         Console.WriteLine($"FuncType Time elapsed: {funcElapsed}");
 
         Console.WriteLine("=============  end  ==============");
-
         Console.ReadLine();
     }
 
